@@ -1,0 +1,66 @@
+import { styled } from 'styled-components';
+
+export const Wrapper = styled.div`
+  display: flex;
+`;
+
+export const Image = styled.div`
+  margin: 0 30px 0 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 6px 8px;
+`;
+
+export const Button = styled.button`
+  cursor: pointer;
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 10px;
+  transform: scale(1);
+  transition: all 300ms ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+export const Genre = styled.div`
+  display: flex;
+  gap: 7px;
+`;
+
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 75%;
+`;
+
+export const P = styled.div`
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  padding-bottom: 20px;
+`;
+
+export const H2 = styled.div`
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+`;
+
+export const H3 = styled.div`
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+`;
+
+export const MoreInfo = styled.div`
+  margin: 0 0 0 25px;
+  font-size: 20px;
+  font-weight: 700;
+`;
