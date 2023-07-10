@@ -13,6 +13,7 @@ import {
   MoreInfo,
 } from './MovieDetails.styled';
 import { Ul } from 'components/ShowMoviesList/ShowMoviesList.styled';
+import css from 'pages/MovieDetails/MovieDetails.module.css';
 
 const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState({});
@@ -69,13 +70,21 @@ const MovieDetails = () => {
       <div>
         <MoreInfo>Additional Imagermation</MoreInfo>
         <Ul>
-          <li>
-            <Link to="cast" state={{ from: link }}>
+          <li className={css.linkInfo}>
+            <Link
+              className={css.linkInfo__item}
+              to="cast"
+              state={{ from: link }}
+            >
               Cast
             </Link>
           </li>
-          <li>
-            <Link to="reviews" state={{ from: link }}>
+          <li className={css.linkInfo}>
+            <Link
+              className={css.linkInfo__item}
+              to="reviews"
+              state={{ from: link }}
+            >
               Reviews
             </Link>
           </li>

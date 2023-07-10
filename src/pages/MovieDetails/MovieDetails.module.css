@@ -1,0 +1,16 @@
+.linkInfo {
+  transition: all 250ms ease-in-out;
+  transform: scale(1);
+  &:hover {
+    transform: scale(0.99);
+  }
+}
+.linkInfo__item {
+  font-size: 16px;
+  text-decoration: none;
+  color: orange;
+  transition: all 250ms ease-in-out;
+  &:hover {
+    color: black;
+  }
+}

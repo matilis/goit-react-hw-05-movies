@@ -18,6 +18,12 @@ export const Wrapper = styled.div`
   padding: 2px;
   border-radius: 2px;
   width: 98%;
+  transition: all 250ms ease-in-out;
+  transform: scale(1);
+  &:hover {
+    background-color: orange;
+    transform: scale(1.01);
+  }
 `;
 export const Img = styled.img`
   width: 50px;
