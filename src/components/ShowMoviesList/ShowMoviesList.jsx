@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Ul } from './ShowMoviesList.styled';
+import { Ul, Wrapper, Img } from './ShowMoviesList.styled';
 import PropTypes from 'prop-types';
 
 const ShowMoviesList = ({ movies }) => {
@@ -15,7 +15,16 @@ const ShowMoviesList = ({ movies }) => {
               state: { from: setLocation },
             }}
           >
-            {movie.title}
+            <Wrapper>
+              <Img
+                src={
+                  movie.poster_path
+                    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                    : `https://webartdevelopers.com/blog/wp-content/uploads/2020/02/404-Not-Found-SVG-768x432.png`
+                }
+              />
+              {movie.title}
+            </Wrapper>
           </Link>
         </li>
       ))}
