@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Ul, Wrapper, Img } from './ShowMoviesList.styled';
 import PropTypes from 'prop-types';
+import css from 'components/ShowMoviesList/ShowMoviesList.module.css';
 
 const ShowMoviesList = ({ movies }) => {
   const setLocation = useLocation();
@@ -10,6 +11,7 @@ const ShowMoviesList = ({ movies }) => {
       {movies.map(movie => (
         <li key={movie.id}>
           <Link
+            className={css.linkList}
             to={{
               pathname: `/movies/${movie.id}`,
               state: { from: setLocation },
