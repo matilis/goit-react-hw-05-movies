@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
   border: 1px solid orange;
   padding: 2px;
   border-radius: 2px;
+  width: 98%;
 `;
 export const Img = styled.img`
   width: 50px;
