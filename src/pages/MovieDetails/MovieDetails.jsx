@@ -12,6 +12,7 @@ import {
   H3,
   MoreInfo,
 } from './MovieDetails.styled';
+import { Container } from '../Home/Home.styled';
 import { Ul } from 'components/ShowMoviesList/ShowMoviesList.styled';
 import css from 'pages/MovieDetails/MovieDetails.module.css';
 
@@ -37,7 +38,7 @@ const MovieDetails = () => {
   }, [id]);
 
   return (
-    <>
+    <Container>
       <Link to={link}>
         <Button>↩️ Go back</Button>
       </Link>
@@ -94,7 +95,7 @@ const MovieDetails = () => {
       <Suspense fallback={<div>Loading page...</div>}>
         <Outlet />
       </Suspense>
-    </>
+    </Container>
   );
 };
 

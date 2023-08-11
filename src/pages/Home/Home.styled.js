@@ -1,5 +1,22 @@
 import { styled } from 'styled-components';
 
+export const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+`;
+
 export const H1 = styled.h1`
   margin-left: 25px;
   text-shadow: 1px 1px #000000;
