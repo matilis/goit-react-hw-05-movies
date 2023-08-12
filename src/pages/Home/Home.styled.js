@@ -1,15 +1,14 @@
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
-  margin: 0 auto;
+  margin: 0 20px;
 
   @media screen and (min-width: 320px) {
-    width: 320px;
+    min-width: 320px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -18,7 +17,6 @@ export const Container = styled.div`
 `;
 
 export const H1 = styled.h1`
-  margin-left: 25px;
   text-shadow: 1px 1px #000000;
   transform: scaleY(1);
   animation: pulse 3s infinite;
@@ -37,7 +35,6 @@ export const H1 = styled.h1`
   }
 `;
 export const P = styled.p`
-  margin-left: 25px;
   text-shadow: 1px 1px #000000;
   transform: scaleY(1);
   animation: vibration 5s infinite;
