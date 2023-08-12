@@ -12,7 +12,7 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    margin: 20px 30px;
   }
 `;
 
@@ -32,6 +32,10 @@ export const H1 = styled.h1`
     100% {
       transform: scaleY(0.95);
     }
+  }
+  @media screen and (min-width: 1280px) {
+    text-align: center;
+    font-size: 50px;
   }
 `;
 export const P = styled.p`

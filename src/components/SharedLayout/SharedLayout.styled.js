@@ -13,7 +13,7 @@ export const Header = styled.header`
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    min-width: 1280px;
   }
 `;
 
@@ -33,5 +33,9 @@ export const Link = styled(NavLink)`
   &.active {
     cursor: pointer;
     color: orange;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 35px;
+    margin-left: 25px;
   }
 `;
