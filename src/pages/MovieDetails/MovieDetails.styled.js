@@ -4,6 +4,11 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-width: 320px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
 `;
 
 export const Image = styled.div`
@@ -63,7 +68,6 @@ export const H3 = styled.div`
 `;
 
 export const MoreInfo = styled.div`
-  margin: 0 0 0 25px;
   font-size: 20px;
   font-weight: 700;
 `;
