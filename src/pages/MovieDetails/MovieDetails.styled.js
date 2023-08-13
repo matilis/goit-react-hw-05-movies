@@ -2,11 +2,14 @@ import { styled } from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
+  min-width: 320px;
 `;
 
 export const Image = styled.div`
-  margin: 0 30px 0 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 10px 6px 8px;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Button = styled.button`
@@ -15,7 +18,7 @@ export const Button = styled.button`
   border: none;
   color: white;
   padding: 10px 15px;
-  margin: 15px 25px;
+  margin: 15px 0;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -36,7 +39,7 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 75%;
+  margin-top: 20px;
 `;
 
 export const P = styled.div`

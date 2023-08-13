@@ -51,7 +51,6 @@ const MovieDetails = () => {
                 : `https://webartdevelopers.com/blog/wp-content/uploads/2020/02/404-Not-Found-SVG-768x432.png`
             }
             alt={movieDetails.title}
-            width={250}
           />
         </Image>
         <Info>
